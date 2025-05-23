@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: ml-project-2025
+Version: 0.0.1
+Author: Aiman
+Author-email: aiman.ab.ghapar
+Requires-Dist: pandas
+Requires-Dist: numpy
+Requires-Dist: seaborn
