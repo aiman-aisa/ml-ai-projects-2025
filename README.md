@@ -18,10 +18,7 @@
 
 ## 📖 About the Project
 
-This project uses machine learning to predict whether a passenger survived the Titanic disaster based on features like age, sex, class, and fare. It includes data preprocessing, EDA, feature engineering, model training, evaluation, and deployment with Streamlit.
-
-**Objective**:
-- Classify survival (0 = No, 1 = Yes) from passenger features.
+This project is done to understand how the students' performance (test scores) is affected by other variables such as Gender, Ethnicity, Parental Level of Education, Lunch, and Test Preparation course. It includes data preprocessing, EDA, feature engineering, model training, evaluation, and deployment with Flask.
 
 ---
 
