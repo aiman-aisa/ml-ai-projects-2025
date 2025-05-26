@@ -42,7 +42,7 @@ This project uses machine learning to predict whether a passenger survived the T
 ---
 
 ## 📂 Project Structure
-'''
+```
 project-ml/
 ├── artifacts/
 │ ├── data.csv
@@ -75,7 +75,7 @@ project-ml/
 ├── setup.py
 ├── README.md
 └── .gitignore
-'''
+```
 
 ## 📊 Data Source
 - Dataset Source - https://www.kaggle.com/datasets/spscientist/students-performance-in-exams 
