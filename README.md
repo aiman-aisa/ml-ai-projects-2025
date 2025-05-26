@@ -12,6 +12,7 @@
 - [Usage](#usage)
 - [Model Performance](#model-performance)
 - [Results](#results)
+- [AWS EC2 Deployment with GitHub Actions](#deployment)
 - [Future Work](#future-work)
 
 ---
@@ -110,6 +111,28 @@ Best model is Linear Regression with accuracy of 86.98%
 - Student's Performance is related with lunch, race, parental level education, test preparation course
 - Females lead in pass percentage and also are top-scorers
 - Finishing preparation course is benefitial.
+
+## [AWS EC2 Deployment with GitHub Actions]
+1. Create EC2 Instance
+2. Create ECR and save the repository URI and Name
+3. Create GitHub Action with the following Secrets:
+ - AWS_ACCESS_KEY_ID -> access key from IAM
+ - AWS_ECR_LOGIN_URI -> eg: ########.dkr.ecr.ap-southeast-1.amazonaws.com
+ - AWS_REGION
+ - AWS_SECRET_ACCESS_KEY -> access key value from IAM
+ - ECR_REPOSITORY_NAME -> name of your ECR
+4. Launch your EC2 instance and run the following command to install docker:
+   ```bash
+    sudo apt-get update -y
+    sudo apt-get upgrade -y
+    curl -fsSL https://get.docker.com -o get-docker.sh
+    sudo sh get-docker.sh
+    sudo usermod -aG docker ubuntu
+    newgrp docker
+   ```
+5. Create a self-hosted runner with linux and follow the setup command
+6. Run the job
+7. Open the URL of the EC2 instance
 
 ## 🔭 Future Work
 - Add hyperparameter tuning (GridSearchCV or Optuna)
