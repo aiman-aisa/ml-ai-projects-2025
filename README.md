@@ -13,8 +13,6 @@
 - [Model Performance](#model-performance)
 - [Results](#results)
 - [Future Work](#future-work)
-- [License](#license)
-- [Contact](#contact)
 
 ---
 
@@ -96,4 +94,29 @@ source venv/bin/activate
 ```bash
 pip install -r requirements.txt
 ```
+## 🚀 Usage
+1. Run data ingestion, data transformation, model trainer
+- here you will get the best model r2 score printed in the terminal
+- the artifacts folders and the files will be generated
+```bash
+python src/components/data_ingestion.py
+```
+2. Run Flask App
+```bash
+python app.py
+```
 
+## 📈 Model Performance
+Best model is Linear Regression with accuracy of 86.98%
+
+## 📌 Results
+- Student's Performance is related with lunch, race, parental level education, test preparation course
+- Females lead in pass percentage and also are top-scorers
+- Finishing preparation course is benefitial.
+
+## 🔭 Future Work
+- Add hyperparameter tuning (GridSearchCV or Optuna)
+- Use XGBoost or LightGBM for better performance
+- Set up DVC for data versioning
+- Deploy model as REST API with FastAPI
+- Implement CI/CD pipeline using GitHub Actions
