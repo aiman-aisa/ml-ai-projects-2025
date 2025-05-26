@@ -112,7 +112,7 @@ Best model is Linear Regression with accuracy of 86.98%
 - Females lead in pass percentage and also are top-scorers
 - Finishing preparation course is benefitial.
 
-## [AWS EC2 Deployment with GitHub Actions]
+## AWS EC2 Deployment with GitHub Actions
 1. Create EC2 Instance
 2. Create ECR and save the repository URI and Name
 3. Create GitHub Action with the following Secrets:
