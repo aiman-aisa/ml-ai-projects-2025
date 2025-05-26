@@ -83,9 +83,17 @@ project-ml/
 
 ## ⚙️ Installation
 1. Clone the repository
+```bash
+git clone https://github.com/aiman-aisa/ml-ai-projects-2025.git
+cd ml-ai=projects-2025
+```
 2. Create a virtual env
-  python -m venv venv
-  source venv/bin/activate
+```bash
+python -m venv venv
+source venv/bin/activate
+```
 3. Install dependencies
-
+```bash
+pip install -r requirements.txt
+```
 
